@@ -14,14 +14,14 @@ public class Zoo {
             System.out.println("My name is: " + zoo[i].getName());
             zoo[i].makeSound();
             System.out.println("My favorite food is: " + zoo[i].getPreFood());
-            // verifico se sono animali volanti
-            if (zoo[i] instanceof Fly) {
-                ((Fly) zoo[i]).fly();
-            }
 
-            // verifico se sono animali nuotanti
+            if (zoo[i] instanceof Fly) {
+//              ((Fly) zoo[i]).fly();
+                Actions.doFly(((Fly) zoo[i]));
+            }
             if (zoo[i] instanceof Swim) {
-                ((Swim) zoo[i]).swim();
+//                ((Swim) zoo[i]).swim();
+                Actions.doSwim(((Swim) zoo[i]));
             }
 
 
