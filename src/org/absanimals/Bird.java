@@ -4,6 +4,9 @@ public class Bird extends Animal implements Fly{
     public Bird(String name, String preFood) {
         super(name, preFood);
     }
+    public static void makeFly(Fly animal){
+        animal.fly();
+    }
 
     @Override
     public void makeSound() {
@@ -13,5 +16,10 @@ public class Bird extends Animal implements Fly{
     @Override
     public boolean eat(String food) throws IllegalArgumentException {
         return false;
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("I'm flying");
     }
 }

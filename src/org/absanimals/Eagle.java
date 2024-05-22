@@ -15,4 +15,9 @@ public class Eagle extends Animal implements Fly{
     public boolean eat(String food) throws IllegalArgumentException {
         return false;
     }
+
+    @Override
+    public void fly() {
+        System.out.println("I'm flying");
+    }
 }
