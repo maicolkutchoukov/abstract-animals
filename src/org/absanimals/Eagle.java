@@ -1,6 +1,6 @@
 package org.absanimals;
 
-public class Eagle extends Animal{
+public class Eagle extends Animal implements Fly{
 
     public Eagle(String name, String preFood) {
         super(name, preFood);

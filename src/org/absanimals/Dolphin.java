@@ -1,6 +1,6 @@
 package org.absanimals;
 
-public class Dolphin extends Animal{
+public class Dolphin extends Animal implements Swim{
 
 
     public Dolphin(String name, String preFood) {

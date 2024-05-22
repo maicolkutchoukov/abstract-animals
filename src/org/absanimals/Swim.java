@@ -1,5 +1,7 @@
 package org.absanimals;
 
 public interface Swim {
-    void swim();
+    default void swim(){
+        System.out.println("I'm swimming");
+    };
 }

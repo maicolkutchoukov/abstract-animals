@@ -1,5 +1,7 @@
 package org.absanimals;
 
 public interface Fly {
-    void fly();
+    default void fly(){
+        System.out.println("I'm flying");
+    };
 }
