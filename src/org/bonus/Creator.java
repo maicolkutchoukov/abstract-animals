@@ -2,7 +2,7 @@ package org.bonus;
 
 public class Creator {
 
-    public Device create(String type) throws Exception {
+    public static Device create(String type) throws Exception {
         if(type.equals("dvd player")){
             return new DvdPlayer();
         } else if (type.equals("playstation")){

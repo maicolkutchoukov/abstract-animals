@@ -5,9 +5,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Device type: ");
         String type = scanner.nextLine();
-        Creator creator = new Creator();
+
         try {
-            Device device = creator.create(type);
+            Device device = Creator.create(type);
             device.play();
             System.out.println("**************");
             device.stop();
